@@ -48,7 +48,11 @@ input{
 }
 
 .card img{
+    .card img{
     width:100%;
+    max-width:280px;
+    display:block;
+    margin:auto;
     border-radius:15px;
 }
 
