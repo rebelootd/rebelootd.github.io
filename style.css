@@ -75,4 +75,12 @@ a{
 
 button:hover{
     background:#a67c42;
+    
+}.tombol{
+    display:flex;
+    gap:10px;
+}
+
+.tombol a{
+    flex:1;
 }
