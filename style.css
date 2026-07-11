@@ -1,49 +1,74 @@
 body{
-    background:#F8F2EA;
     font-family:Arial,sans-serif;
+    background:#f7f1ea;
     margin:0;
     padding:20px;
     text-align:center;
 }
 
 h1{
-    color:#6B4F3B;
-    font-size:36px;
+    color:#6d4c41;
+    font-size:40px;
 }
 
-p{
-    color:#555;
-    font-size:18px;
+input{
+    width:90%;
+    max-width:350px;
+    padding:12px;
+    border-radius:30px;
+    border:1px solid #ccc;
+    font-size:16px;
+    margin-bottom:25px;
 }
 
-button{
-    background:#C89B5B;
-    color:white;
-    border:none;
-    padding:15px 30px;
-    border-radius:15px;
-    font-size:18px;
-}
-a{
-    text-decoration: none;
-}
-.card img{
-    width: 100%;
-    max-width: 320px;
-    border-radius: 20px;
-}
 .menu{
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
     gap:10px;
+    margin-bottom:30px;
 }
 
 .menu a{
-    background:#c99b57;
+    background:#c89a5b;
     color:white;
+    text-decoration:none;
     padding:10px 18px;
     border-radius:30px;
-    text-decoration:none;
     font-weight:bold;
+}
+
+.card{
+    width:320px;
+    margin:auto;
+    background:white;
+    border-radius:20px;
+    padding:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+
+.card img{
+    width:100%;
+    border-radius:15px;
+}
+
+button{
+    width:100%;
+    padding:15px;
+    margin-top:10px;
+    border:none;
+    border-radius:30px;
+    background:#c89a5b;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+a{
+    text-decoration:none;
+}
+
+button:hover{
+    background:#a67c42;
 }
