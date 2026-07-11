@@ -6,20 +6,7 @@
 <title>Rebel OOTD</title>
 <link rel="stylesheet" href="style.css">
 </head>
-<script>
-fetch("products.json")
-.then(res => res.json())
-.then(data => {
-  const produk = data[0];
 
-  document.querySelector("img").src = produk.foto;
-  document.querySelector("h3").innerText = produk.nama;
-  document.querySelector(".rating").innerText = "⭐ " + produk.rating;
-  document.querySelector(".harga").innerText = "💰 " + produk.harga;
-  document.querySelector(".shopee").href = produk.shopee;
-  document.querySelector(".tiktok").href = produk.tiktok;
-});
-</script>
 <body>
 
 <h1>🤎 Rebel OOTD</h1>
@@ -43,14 +30,38 @@ fetch("products.json")
 <h2>🔥 Produk Terbaru</h2>
 
 <div class="card">
-<img src="https://via.placeholder.com/250x250.png?text=Foto+Produk">
-<h3>Nama Produk</h3>
-<p>⭐ Rating otomatis mengikuti produk</p>
-<p>💰 Harga otomatis mengikuti produk</p>
+<img id="foto" width="250">
 
+<h3 id="nama"></h3>
+
+<p id="rating"></p>
+
+<p id="harga"></p>
+
+<a id="shopee" target="_blank">
 <button>🛒 Shopee</button>
+</a>
+
+<a id="tiktok" target="_blank">
 <button>🎵 TikTok Shop</button>
+</a>
+
 </div>
+
+<script>
+fetch("products.json")
+.then(res => res.json())
+.then(data => {
+const produk = data[0];
+
+document.getElementById("foto").src = produk.foto;
+document.getElementById("nama").innerText = produk.nama;
+document.getElementById("rating").innerText = "⭐ " + produk.rating;
+document.getElementById("harga").innerText = "💰 " + produk.harga;
+document.getElementById("shopee").href = produk.shopee;
+document.getElementById("tiktok").href = produk.tiktok;
+});
+</script>
 
 </body>
 </html>
