@@ -16,7 +16,6 @@ btn.addEventListener("click", async () => {
 
   // Ambil file gambar
   const file = document.getElementById("fileGambar").files[0];
-  if (!file) {
     alert("Pilih gambar dulu ya 😊");
     return;
   }
