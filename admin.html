@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,6 +17,8 @@
 
 <div class="card">
 
+<h3>Tambah Produk</h3>
+
 <input id="nama" type="text" placeholder="Nama Produk">
 
 <br><br>
@@ -28,11 +31,29 @@
 
 <br><br>
 
-<input id="gambar" type="text" placeholder="Link Gambar">
+<label>📷 Pilih Gambar</label>
+
+<br>
+
+<input
+type="file"
+id="fileGambar"
+accept="image/*">
 
 <br><br>
 
-<input id="link" type="text" placeholder="Link Shopee">
+<input
+id="gambar"
+type="text"
+placeholder="Link gambar akan muncul otomatis"
+readonly>
+
+<br><br>
+
+<input
+id="link"
+type="text"
+placeholder="Link Shopee">
 
 <br><br>
 
@@ -50,4 +71,5 @@
 <script type="module" src="admin.js"></script>
 
 </body>
+
 </html>
